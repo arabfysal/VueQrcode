@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QrCode</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="nav-bar"></div>
+	<div id="app">
+		<!-- <p>{{message}}</p> -->
+		
+		<ul>
+			<li><router-link to="/home">Auna</router-link></li>
+			<li><router-link to="/about">Musbell</router-link></li>
+			<li><router-link to="/dashboard">Shaheed</router-link></li>
+			<li><router-link to="/scan">Scan QrCode</router-link></li>
+		</ul>
+		<router-view></router-view>
+		<qriously :value="message" size=200></qriously>
+	</div>
+
+<script type="text/javascript" src="js/vue.js"></script>
+<script type="text/javascript" src="js/vue-router.js"></script>
+<script type="text/javascript" src="js/vue-qriously.js"></script>
+<script type="text/javascript" src="js/vue-qrcode-reader.browser.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
